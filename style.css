@@ -1,0 +1,746 @@
+/*********************** 
+Template Name: Rodja Hartman - Personal crate Agency thml Template
+Template URL: https://www.vecuro.com/html/rodja;
+Author Name: Shahin;
+Author URL : https://www.shahinator.com;
+Description: Rodja Hartman- Personal create Agency HTML Template;
+Version:1.01;
+
+Table of content
+ 
+ ************************/
+/* *****************************
+
+ ******************************** */
+/* *****************************
+1. Overall typhography
+2. Header Area Design
+3. Banner Area Design
+4. About  Area Design
+5. Call to Action Area Design
+6. Services Area Design
+7. Skill Area Design
+8. project-area Design
+9. Testimonial Area Design
+10. Blog Area Design
+11. Footer Area Design
+ ******************************** */
+/* Reset Code */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.section-title h4 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+.section-title h4::after {
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  right: 0;
+  margin: 0 auto;
+  border-bottom: 2px solid red;
+  content: "";
+  width: 110px;
+}
+.section-title h2 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  letter-spacing: -3px;
+  margin-bottom: 30px;
+}
+.section-title h2 span {
+  color: #ff0049;
+}
+
+body {
+  color: #1d1d1d;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* *****************************
+2. Header Area Design
+ ******************************** */
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+header .header-area {
+  margin-top: 60px;
+}
+header .header-area .header-bg {
+  background: #ffffff;
+  padding: 15px;
+}
+header .header-area .logo-area a {
+  display: block;
+  padding-top: 10px;
+}
+header .header-area .logo-area a img {
+  width: auto;
+}
+header .header-area nav .main-menu ul li {
+  display: inline-block;
+  padding: 10px 30px;
+  position: relative;
+}
+header .header-area nav .main-menu ul li.active a, header .header-area nav .main-menu ul li:hover a {
+  color: #ff0049;
+  position: relative;
+}
+header .header-area nav .main-menu ul li.active a:before, header .header-area nav .main-menu ul li:hover a:before {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #ff0049;
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -20px;
+}
+header .header-area nav .main-menu ul li a {
+  display: block;
+  transition: all 0.3s ease-in-out;
+  color: #505050;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+header .header-area .humberggum-menu a {
+  display: inline-block;
+  position: relative;
+}
+header .header-area .humberggum-menu a i {
+  color: #ff0049;
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  right: -75px;
+  transform: rotate(45deg);
+  top: -25px;
+}
+
+/* *****************************
+3. Banner Area Design
+ ******************************** */
+.banner-area {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  position: relative;
+}
+.banner-area .images {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.banner-area .content {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.banner-area .content span {
+  font-size: 30px;
+  letter-spacing: 7px;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 10px;
+}
+.banner-area .content h1 {
+  font-size: 97px;
+  font-weight: 700;
+}
+.banner-area .content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.banner-area .content a {
+  display: inline-block;
+  padding: 13px 40px;
+  color: #ff0049;
+  background: #fff;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.banner-area .content a:hover {
+  background: #ff0049;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+.banner-area .scroll-to-down {
+  position: absolute;
+  left: 0px;
+  bottom: -38px;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  z-index: 3;
+}
+.banner-area .scroll-to-down a {
+  display: inline-block;
+}
+.banner-area .scroll-to-down a i {
+  color: #ff0049;
+  background: #fff;
+  padding: 0px;
+  border-radius: 24px;
+  height: 80px;
+  width: 45px;
+  font-size: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* *****************************
+4. About Area Design
+ ******************************** */
+.about-area {
+  padding: 150px 0px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+}
+.about-area .images {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+.about-area .images img {
+  width: 70%;
+}
+.about-area .content span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  position: relative;
+}
+.about-area .content span:after {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-bottom: 2px solid red;
+  content: "";
+  width: 110px;
+}
+.about-area .content h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+}
+.about-area .content p {
+  margin-bottom: 30px;
+}
+.about-area .content .about-button ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.about-area .content .about-button ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.about-area .content .about-button ul li:last-child a {
+  background: transparent;
+  border: 1px solid #ff0049;
+  color: #fff;
+}
+.about-area .content .about-button ul li a {
+  display: inline-block;
+  padding: 13px 40px;
+  color: #ff0049;
+  background: #fff;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.about-area .content .about-button ul li a:hover {
+  background: #ff0049;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+/* *****************************
+5. Call to Action Area Design
+ ******************************** */
+.call-to-action-area {
+  padding: 200px 0px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.call-to-action-area .row {
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+}
+.call-to-action-area .content h2 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -3px;
+}
+.call-to-action-area .content h2 span {
+  color: #ff0049;
+}
+.call-to-action-area .button-area {
+  text-align: center;
+}
+.call-to-action-area .button-area strong {
+  display: block;
+  padding: 15px;
+  background: #ff0049;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.call-to-action-area .button-area a {
+  display: inline-block;
+  padding: 13px 40px;
+  color: #ff0049;
+  background: #fff;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ff0049;
+}
+.call-to-action-area .button-area a:hover {
+  background: #ff0049;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+/* *****************************
+6. Services  Area Design
+ ******************************** */
+.services-area {
+  padding: 200px 0px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #DEE1E6;
+}
+.services-area .single-service {
+  text-align: center;
+  padding: 60px 25px;
+  margin: 30px 0;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ccc;
+}
+.services-area .single-service:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
+.services-area .single-service:hover .icon {
+  background: url(./images/shape.png) no-repeat #ff0049;
+  transition: all 0.3s ease-in-out;
+}
+.services-area .single-service .icon {
+  margin-bottom: 0px;
+  background: url(./images/shape.png) no-repeat #1d1d1d;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.services-area .single-service .icon:hover {
+  background: url(./images/shape-hover.png) no-repeat #1d1d1d;
+}
+.services-area .single-service .icon i {
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 56 auto;
+  top: 100px;
+  color: #fff;
+}
+.services-area .single-service h3 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* *****************************
+7. Skill Area Design
+ ******************************** */
+.skill-area {
+  padding: 200px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.skill-area .row {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+.skill-area .content h2 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+.skill-area .content h2 span {
+  color: #ff0049;
+}
+.skill-area .content p {
+  margin-bottom: 20px;
+}
+.skill-area .content a {
+  display: inline-block;
+  padding: 13px 40px;
+  color: #ff0049;
+  background: #fff;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ff0049;
+}
+.skill-area .content a:hover {
+  background: #ff0049;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+.skill-area .single-skill input.knob {
+  background: #ff0049 !important;
+  border-radius: 100%;
+  height: 90px !important;
+  width: 90px !important;
+  margin-top: 45px !important;
+}
+
+/* *****************************
+8. Project Area Design
+ ******************************** */
+.project-area {
+  padding: 200px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-area .single-project {
+  margin: 15px 0;
+  position: relative;
+}
+.project-area .single-project:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.project-area .single-project:hover .quick-access {
+  opacity: 1;
+  visibility: visible;
+  top: 20px;
+}
+.project-area .single-project:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 73, 0.8);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.project-area .single-project .images {
+  position: relative;
+  overflow: hidden;
+}
+.project-area .single-project .images img {
+  width: 100%;
+}
+.project-area .single-project .quick-access {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.project-area .single-project .quick-access ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.project-area .single-project .quick-access ul li {
+  display: inline-block;
+  margin: 3px;
+}
+.project-area .single-project .quick-access ul li a {
+  display: block;
+}
+.project-area .single-project .quick-access ul li a i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 100%;
+  background: #fff;
+  display: block;
+  font-size: 16px;
+  color: #ff0049;
+  transition: all 0.3s ease-in-out;
+}
+.project-area .single-project .quick-access ul li a i:hover {
+  background: #ff0049;
+  color: #fff;
+}
+
+/* *****************************
+9. Testimonial Area Design
+ ******************************** */
+.testimonial-area {
+  padding: 200px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #FFE8EF;
+}
+.testimonial-area ul.nav-tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: inherit !important;
+  border: none;
+}
+.testimonial-area ul.nav-tabs li {
+  display: inline-block;
+  margin: 10px;
+}
+.testimonial-area ul.nav-tabs li a {
+  display: block;
+  padding: 0;
+  border: none;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
+.testimonial-area ul.nav-tabs li a.active {
+  background: transparent;
+  border: none;
+  border: 5px solid #ff0049;
+  border-radius: 100%;
+  box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
+.testimonial-area ul.nav-tabs li a img {
+  width: 86px;
+  height: 86px;
+  line-height: 86px;
+  border-radius: 100%;
+}
+.testimonial-area .single-testimonial .images img {
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 100%;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
+.testimonial-area .single-testimonial .content h4 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 5px 0;
+}
+.testimonial-area .single-testimonial .content span {
+  color: #ff0049;
+  display: block;
+  margin-bottom: 20px;
+}
+.testimonial-area .single-testimonial .content p {
+  position: relative;
+}
+.testimonial-area .single-testimonial .content p i {
+  color: #ff0049;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 30px;
+}
+
+/* *****************************
+10. Blog Area Design
+ ******************************** */
+.blog-area {
+  padding: 200px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #D2C3C4;
+}
+.blog-area .single-blog {
+  margin: 15px 0;
+  background: #f6f6f6;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.blog-area .single-blog:hover {
+  box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
+.blog-area .single-blog:hover .read-more {
+  opacity: 1;
+  visibility: visible;
+}
+.blog-area .single-blog .image {
+  position: relative;
+}
+.blog-area .single-blog .image a {
+  display: block;
+}
+.blog-area .single-blog .image a img {
+  width: 100%;
+}
+.blog-area .single-blog .image .quick-access {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  margin: 0 auto;
+  right: 0;
+}
+.blog-area .single-blog .image .quick-access ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.blog-area .single-blog .image .quick-access ul li {
+  display: inline-block;
+}
+.blog-area .single-blog .image .quick-access ul li a {
+  display: block;
+}
+.blog-area .single-blog .image .quick-access ul li a i {
+  width: 40px;
+  display: block;
+  height: 40px;
+  line-height: 25px;
+  background: #ff0049;
+  text-align: center;
+  color: #fff;
+  border-radius: 100%;
+  border: 5px solid #fff;
+  box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+  padding: 3px;
+  font-size: 12px;
+}
+.blog-area .single-blog h3 {
+  padding: 30px 5px;
+}
+.blog-area .single-blog h3 a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+  margin: 0;
+  line-height: 1.2;
+}
+.blog-area .single-blog h3 a:hover {
+  color: #ff0049;
+  transition: all 0.3s ease-in-out;
+}
+.blog-area .single-blog h3 a span {
+  color: #ff0049;
+}
+.blog-area .single-blog .read-more {
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.blog-area .single-blog .read-more a {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  padding: 13px 40px;
+  color: #ff0049;
+  background: #fff;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ff0049;
+  width: 170px;
+}
+.blog-area .single-blog .read-more a:hover {
+  background: #ff0049;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+/* *****************************
+11. Footer Area Design
+ ******************************** */
+footer {
+  padding: 200px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #FF2874;
+}

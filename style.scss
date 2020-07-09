@@ -1,0 +1,823 @@
+/*********************** 
+Template Name: Rodja Hartman - Personal crate Agency thml Template
+Template URL: https://www.vecuro.com/html/rodja;
+Author Name: Shahin;
+Author URL : https://www.shahinator.com;
+Description: Rodja Hartman- Personal create Agency HTML Template;
+Version:1.01;
+
+Table of content
+ 
+ ************************/
+
+
+/* *****************************
+
+ ******************************** */
+
+
+/* *****************************
+1. Overall typhography
+2. Header Area Design
+3. Banner Area Design
+4. About  Area Design
+5. Call to Action Area Design
+6. Services Area Design
+7. Skill Area Design
+8. project-area Design
+9. Testimonial Area Design
+10. Blog Area Design
+11. Footer Area Design
+ ******************************** */
+
+$primary-color:#ff0049;
+$transition: all .3s ease-in-out;
+$body-font: 'Open Sans',
+sans-serif;
+$title-font:'Poppins',
+sans-serif;
+
+/* Reset Code */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: $transition;
+    &:hover {
+        text-decoration: none;
+        transition: $transition;
+    }
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    h4 {
+        font-size: 20px;
+        font-family: $title-font;
+        font-weight: bold;
+        position: relative;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+        &::after {
+            position: absolute;
+            left: 0px;
+            bottom: -10px;
+            right: 0;
+            margin: 0 auto;
+            border-bottom: 2px solid red;
+            content: "";
+            width: 110px;
+        }
+    }
+    h2 {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: $title-font;
+        color: #000;
+        letter-spacing: -3px;
+        margin-bottom: 30px;
+        span {
+            color: $primary-color;
+        }
+    }
+}
+
+body {
+    color: #1d1d1d;
+    font-family: $body-font;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+/* *****************************
+2. Header Area Design
+ ******************************** */
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    .header-area {
+        //  .row{
+        // 	 display: flex;
+        // 	 vertical-align: middle;
+        // 	 align-items: center;
+        //  }
+        margin-top: 60px;
+        .header-bg {
+            background: #ffffff;
+            padding: 15px;
+        }
+        .logo-area {
+            a {
+                display: block;
+                padding-top: 10px;
+                img {
+                    width: auto;
+                }
+            }
+        }
+        nav {
+            .main-menu {
+                ul {
+                    li {
+                        display: inline-block;
+                        padding: 10px 30px;
+                        position: relative;
+                        &.active,
+                        &:hover {
+                            a {
+                                color: $primary-color;
+                                position: relative;
+                                &:before {
+                                    width: 5px;
+                                    height: 5px;
+                                    border-radius: 100%;
+                                    background: $primary-color;
+                                    content: "";
+                                    position: absolute;
+                                    top: 12px;
+                                    left: -20px;
+                                }
+                            }
+                        }
+                        a {
+                            display: block;
+                            transition: $transition;
+                            color: #505050;
+                            font-family: $body-font;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        .humberggum-menu {
+            a {
+                display: inline-block;
+                position: relative;
+                i {
+                    color: $primary-color;
+                    font-size: 60px;
+                    position: absolute;
+                    top: 0;
+                    right: -75px;
+                    transform: rotate(45deg);
+                    top: -25px;
+                }
+            }
+        }
+    }
+}
+
+
+/* *****************************
+3. Banner Area Design
+ ******************************** */
+
+.banner-area {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    position: relative;
+    .images {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .content {
+        color: #fff;
+        font-family: $title-font;
+        span {
+            font-size: 30px;
+            letter-spacing: 7px;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 97px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        a {
+            display: inline-block;
+            padding: 13px 40px;
+            color: $primary-color;
+            background: #fff;
+            border-radius: 25px;
+            font-family: $title-font;
+            font-weight: 700;
+            transition: $transition;
+            &:hover {
+                background: $primary-color;
+                transition: $transition;
+                color: #fff;
+            }
+        }
+    }
+    .scroll-to-down {
+        position: absolute;
+        left: 0px;
+        bottom: -38px;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        cursor: pointer;
+        z-index: 3;
+        a {
+            display: inline-block;
+            i {
+                color: $primary-color;
+                background: #fff;
+                padding: 0px;
+                border-radius: 24px;
+                height: 80px;
+                width: 45px;
+                font-size: 45px;
+                display: inline-block;
+                text-align: center;
+                line-height: 80px;
+                box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+            }
+        }
+    }
+}
+
+
+/* *****************************
+4. About Area Design
+ ******************************** */
+
+.about-area {
+    padding: 150px 0px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    .images {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        img {
+            width: 70%;
+        }
+    }
+    .content {
+        span {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            display: block;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+            position: relative;
+            &:after {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                border-bottom: 2px solid red;
+                content: "";
+                width: 110px;
+            }
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+            display: block;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        .about-button {
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin-right: 15px;
+                    &:last-child {
+                        a {
+                            background: transparent;
+                            border: 1px solid $primary-color;
+                            color: #fff;
+                        }
+                    }
+                    a {
+                        display: inline-block;
+                        padding: 13px 40px;
+                        color: $primary-color;
+                        background: #fff;
+                        border-radius: 25px;
+                        font-family: $title-font;
+                        font-weight: 700;
+                        transition: $transition;
+                        &:hover {
+                            background: $primary-color;
+                            transition: $transition;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* *****************************
+5. Call to Action Area Design
+ ******************************** */
+
+.call-to-action-area {
+    padding: 200px 0px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .row {
+        vertical-align: middle;
+        align-items: center;
+        display: flex;
+    }
+    .content {
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            font-family: $title-font;
+            letter-spacing: -3px;
+            span {
+                color: $primary-color;
+            }
+            ;
+        }
+    }
+    .button-area {
+        text-align: center;
+        strong {
+            display: block;
+            padding: 15px;
+            background: $primary-color;
+            font-size: 24px;
+            color: #fff;
+            border-radius: 3px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        a {
+            display: inline-block;
+            padding: 13px 40px;
+            color: $primary-color;
+            background: #fff;
+            border-radius: 25px;
+            font-family: $title-font;
+            font-weight: 700;
+            transition: $transition;
+            border: 1px solid $primary-color;
+            &:hover {
+                background: $primary-color;
+                transition: $transition;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+/* *****************************
+6. Services  Area Design
+ ******************************** */
+
+.services-area {
+    padding: 200px 0px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #DEE1E6;
+    .single-service {
+        text-align: center;
+        padding: 60px 25px;
+        margin: 30px 0;
+        background: #fff;
+        transition: $transition;
+        border: 1px solid #ccc;
+        &:hover {
+            transition: $transition;
+            box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+            .icon {
+                background: url(./images/shape.png) no-repeat #ff0049;
+                transition: $transition;
+            }
+        }
+        .icon {
+            margin-bottom: 0px;
+            background: url(./images/shape.png) no-repeat #1d1d1d;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto;
+            text-align: center;
+            transition: $transition;
+            &:hover {
+                background: url(./images/shape-hover.png) no-repeat #1d1d1d;
+            }
+            i {
+                font-size: 40px;
+                text-align: center;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 56 auto;
+                top: 100px;
+                color: #fff;
+            }
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            font-family: $title-font;
+            margin-bottom: 20px;
+            color: #000;
+        }
+    }
+}
+
+
+/* *****************************
+7. Skill Area Design
+ ******************************** */
+
+.skill-area {
+    padding: 200px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .row {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+    }
+    .content {
+        h2 {
+            font-size: 60px;
+            font-weight: bold;
+            font-family: $title-font;
+            letter-spacing: -3px;
+            margin-bottom: 20px;
+            span {
+                color: $primary-color;
+            }
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            padding: 13px 40px;
+            color: $primary-color;
+            background: #fff;
+            border-radius: 25px;
+            font-family: $title-font;
+            font-weight: 700;
+            transition: $transition;
+            border: 1px solid $primary-color;
+            &:hover {
+                background: $primary-color;
+                transition: $transition;
+                color: #fff;
+            }
+        }
+    }
+    .single-skill {
+        input.knob {
+            background: $primary-color!important;
+            border-radius: 100%;
+            height: 90px !important;
+            width: 90px !important;
+            margin-top: 45px !important;
+        }
+    }
+}
+
+
+/* *****************************
+8. Project Area Design
+ ******************************** */
+
+.project-area {
+    padding: 200px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .single-project {
+        margin: 15px 0;
+        position: relative;
+        &:hover {
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+            .quick-access {
+                opacity: 1;
+                visibility: visible;
+                top: 20px;
+            }
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($primary-color, .8);
+            z-index: 1;
+            transition: $transition;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .images {
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        .quick-access {
+            position: absolute;
+            top: -50px;
+            right: 20px;
+            z-index: 2;
+            opacity: 0;
+            visibility: hidden;
+            transition: $transition;
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin: 3px;
+                    a {
+                        display: block;
+                        i {
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            border-radius: 100%;
+                            background: #fff;
+                            display: block;
+                            font-size: 16px;
+                            color: $primary-color;
+                            transition: $transition;
+                            &:hover {
+                                background: $primary-color;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* *****************************
+9. Testimonial Area Design
+ ******************************** */
+
+.testimonial-area {
+    padding: 200px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #FFE8EF;
+    ul {
+        &.nav-tabs {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            display: inherit !important;
+            border: none;
+            li {
+                display: inline-block;
+                margin: 10px;
+                a {
+                    display: block;
+                    padding: 0;
+                    border: none;
+                    border: 5px solid #fff;
+                    border-radius: 100%;
+                    box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+                    &.active {
+                        background: transparent;
+                        border: none;
+                        border: 5px solid $primary-color;
+                        border-radius: 100%;
+                        box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+                    }
+                    img {
+                        width: 86px;
+                        height: 86px;
+                        line-height: 86px;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .single-testimonial {
+        .images {
+            img {
+                margin-bottom: 20px;
+                width: 150px;
+                height: 150px;
+                line-height: 150px;
+                border-radius: 100%;
+                border: 5px solid #fff;
+                border-radius: 100%;
+                box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+            }
+        }
+        .content {
+            h4 {
+                font-size: 24px;
+                font-weight: 800;
+                color: #000;
+                font-family: $title-font;
+                margin: 0 0 5px 0;
+            }
+            span {
+                color: $primary-color;
+                display: block;
+                margin-bottom: 20px;
+            }
+            p {
+                position: relative;
+                i {
+                    color: $primary-color;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                    font-size: 30px;
+                    ;
+                }
+            }
+        }
+    }
+}
+
+
+/* *****************************
+10. Blog Area Design
+ ******************************** */
+
+.blog-area {
+    padding: 200px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #D2C3C4;
+    .single-blog {
+        margin: 15px 0;
+        background: #f6f6f6;
+        transition: $transition;
+        position: relative;
+        &:hover {
+            box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+            .read-more {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .image {
+            position: relative;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+            .quick-access {
+                position: absolute;
+                left: 0;
+                bottom: -20px;
+                margin: 0 auto;
+                right: 0;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    li {
+                        display: inline-block;
+                        a {
+                            display: block;
+                            i {
+                                width: 40px;
+                                display: block;
+                                height: 40px;
+                                line-height: 25px;
+                                background: $primary-color;
+                                text-align: center;
+                                color: #fff;
+                                border-radius: 100%;
+                                border: 5px solid #fff;
+                                box-shadow: 0 1px 2px 0 rgba(60, 67, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+                                padding: 3px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h3 {
+            padding: 30px 5px;
+            a {
+                font-size: 20px;
+                font-weight: 700;
+                color: #000;
+                font-family: $title-font;
+                transition: $transition;
+                margin: 0;
+                line-height: 1.2;
+                &:hover {
+                    color: $primary-color;
+                    transition: $transition;
+                }
+                span {
+                    color: $primary-color;
+                }
+            }
+        }
+        .read-more {
+            display: inline-block;
+            opacity: 0;
+            visibility: hidden;
+            transition: $transition;
+            a {
+                position: absolute;
+                left: 0;
+                bottom: -25px;
+                right: 0;
+                margin: 0 auto;
+                text-align: center;
+                display: inline-block;
+                padding: 13px 40px;
+                color: $primary-color;
+                background: #fff;
+                border-radius: 25px;
+                font-family: $title-font;
+                font-weight: 700;
+                transition: $transition;
+                border: 1px solid $primary-color;
+                width: 170px;
+                &:hover {
+                    background: $primary-color;
+                    transition: $transition;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+/* *****************************
+11. Footer Area Design
+ ******************************** */
+
+footer {
+    padding: 200px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #FF2874;
+}
